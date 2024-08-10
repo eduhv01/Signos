@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    background-color: #CE0000;
+}
+
+.navbar {
+    display: flex;
+    font-family: "Gupter", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 27px;
+    padding: 10px;
+    background-color: #8f0606;
+}
+
+#logo {
+    color: white;
+}
+
+#linki {
+    color: white;
+    text-decoration: none;
+}
+
+.signosI {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    
+}
+
+.signo-item {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.signo-item img {
+    width: 150px;
+}
+
+.signo-item:hover {
+    background-color: #f9f9f9;
+    box-shadow: 2 4px 10px rgba(0,0,0,0.2);
+}
+
+.signo-descricao {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 0.5px solid #272727;
+    padding: 10px;
+    width: 200px;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.signo-item {
+    position: relative;
+}
+
+.signo-item:hover .signo-descricao {
+    display: block;
+}
